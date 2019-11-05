@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon.ico">
+    <title>MATH</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- front -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit&amp;display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #e3f2fd;
+        }
+        
+        .timer {
+            text-align: right;
+            color: #e3f2fd;
+        }
+        
+        .button {
+            padding: 20px 40px;
+            font-size: 20px;
+        }
+        
+        .answer {
+            padding: 3px;
+            margin: 0 4px;
+            float: left;
+            position: relative;
+        }
+        
+        .ask {
+            clear: left;
+            border-top: solid 1px #dddddd;
+            margin-left: 15px;
+            font-size: 1.5em;
+        }
+        
+        .quest {
+            margin-left: 2%;
+        }
+        
+        #ansbar {
+            text-align: center;
+            right: 0;
+            top: 8%;
+            background-color: aqua;
+            width: 20%;
+            position: fixed;
+            visibility: hidden;
+            border: 3px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-primary fixed-top timer">
+        <h3>จำนวนจริง(O-NET)</h3>
+        <h1 id="timer">00:00:00</h1>
+    </nav>
+    <br><br><br><br>
+    <section style="margin-right: 20%;">
+        <header>
+            <h1>จำนวนจริง(O-NET)</h1><br>
+        </header>
+        <div id="ansbar">
+            <h2><b>เฉลยข้อผิด</b></h2>
+        </div>
+        <article>
+            <p class="ask">1) กำหนดให้ a,b, c และ d เป็นจำนวนจริงใดๆ ข้อใดต่อไปนี้เป็นจริง </p>
+            <div class="quest" id="quest1">
+
+                <input type="radio" name="quest1" value="" checked hidden>
+                <p><input type="radio" id="r1" name="quest1" value="ก">ก.) ถ้า a
+                    < b แล้ว 1/a> 1/b </p>
+                <p><input type="radio" id="r2" name="quest1" value="ข">ข.) |a + b| = |a| + |b| </p>
+                <p><input type="radio" id="r3" name="quest1" value="ค">ค.) ถ้า a
+                    < b และ c < d แล้ว ac < bd</p>
+                        <p><input type="radio" id="r4" name="quest1" value="ง">ง.) √(a + b)2 = |a + b|</p>
+            </div>
+
+            <p class="ask">2) กำหนดให้ A = { x ∈ R | |x + 1| ≤ 2 } และ B = { x ∈ R | x^2 − x = 0 } ข้อใดถูก </p>
+            <div class="quest" id="quest2">
+                <input type="radio" name="quest2" value="" checked hidden>
+                <p><input type="radio" id="r1" name="quest2" value="ก">ก.) A ∩ B = {0} </p>
+                <p><input type="radio" id="r2" name="quest2" value="ข">ข.) A ∪ B = B </p>
+                <p><input type="radio" id="r3" name="quest2" value="ค">ค.) B − A = ∅ </p>
+                <p><input type="radio" id="r4" name="quest2" value="ง">ง.) A − B = A </p>
+            </div>
+
+            <p class="ask">3) ถ้า |x + 1| = 3 และ x มีค่าอยู่ระหว่าง −5 กับ 1 แล้ว x|x| มีค่าเท่าใด</p>
+            <div class="quest" id="quest3">
+                <input type="radio" name="quest3" value="" checked hidden>
+                <p><input type="radio" id="r1" name="quest3" value="ก">ก.) -16</p>
+                <p><input type="radio" id="r2" name="quest3" value="ข">ข.) -4</p>
+                <p><input type="radio" id="r3" name="quest3" value="ค">ค.) 4</p>
+                <p><input type="radio" id="r4" name="quest3" value="ง">ง.) 8</p>
+            </div>
+
+            <p class="ask">4) โยนก้อนหินขึ้นไปในแนวดิ่งด้วยอัตราเร็ว 96 ฟุต/วินาที เมื่อเวลาผ่านไป t วินาที ก้อนหินอยู่ที่ความสูง h ฟุตจาก พื้นดิน ถ้าความสัมพันธ์ระหว่าง h และ t คือ h = 96t − 16^2 แล้วช่วงเวลาในข้อใดที่ก้อนหินอยู่สูงจากพื้นอย่างน้อย 80 ฟุต</p>
+            <div class="quest" id="quest4">
+                <input type="radio" name="quest4" value="" checked hidden>
+                <p><input type="radio" id="r1" name="quest4" value="ก">ก.) 1 ≤ t ≤ 2</p>
+                <p><input type="radio" id="r2" name="quest4" value="ข">ข.) 1 ≤ t ≤ 5</p>
+                <p><input type="radio" id="r3" name="quest4" value="ค">ค.) 2 ≤ t ≤ 3</p>
+                <p><input type="radio" id="r4" name="quest4" value="ง">ง.) 2 ≤ t ≤ 4</p>
+            </div>
+
+            <p class="ask">5) พรเทพขับรถออกจากเมือง A เมื่อเวลา 13:00 น. ด้วยอัตราเร็ว 40 กิโลเมตรต่อชั่วโมง หลังจากนั้น 30 นาที สุธีขับ รถออกจากเมือง A โดยมีจุดเริ่มต้นและใช้เส้นทางเดียวกับพรเทพ ด้วยอัตราเร็ว 55 กิโลเมตรต่อชั่วโมง สุธีจะขับรถ ไปทันพรเทพเมื่อเวลาใด
+            </p>
+            <div class="quest" id="quest5">
+                <input type="radio" name="quest5" value="" checked hidden>
+                <p><input type="radio" id="r1" name="quest5" value="ก">ก.) 14:10 น.</p>
+                <p><input type="radio" id="r2" name="quest5" value="ข">ข.) 14:50 น.</p>
+                <p><input type="radio" id="r3" name="quest5" value="ค">ค.) 15:15 น.</p>
+                <p><input type="radio" id="r4" name="quest5" value="ง">ง.) 15:20 น.</p>
+            </div>
+
+            <p class="ask">6) ถ้า a และ b เป็นความยาวของด้านของรูปสี่เหลี่ยมจัตุรัสที่มีพื้นที่ 9 ตารางหน่วย และ 12 ตารางหน่วย ตามลำดับ แล้ว เซต { a , b , ab , a + b , a − b , a^2 + b^2 } มีจำนวนตรรกยะกี่ตัว</p>
+            <div class="quest" id="quest6">
+                <input type="radio" name="quest6" value="" checked hidden>
+                <p><input type="radio" id="r1" name="quest6" value="ก">ก.) 1</p>
+                <p><input type="radio" id="r2" name="quest6" value="ข">ข.) 2</p>
+                <p><input type="radio" id="r3" name="quest6" value="ค">ค.) 3</p>
+                <p><input type="radio" id="r4" name="quest6" value="ง">ง.) 4</p>
+            </div>
+
+            <p class="ask">7) ข้อใดมีทั้งจำนวนเต็ม, จำนวนตรรกยะ และ จำนวนอตรรกยะ</p>
+            <div class="quest" id="quest7">
+                <input type="radio" name="quest7" value="" checked hidden>
+                <p><input type="radio" id="r1" name="quest7" value="ก">ก.) −3/5 , 6.060060006... , √1000</p>
+                <p><input type="radio" id="r2" name="quest7" value="ข">ข.) √2 − 0.414 , π^2 , 4.718</p>
+                <p><input type="radio" id="r3" name="quest7" value="ค">ค.) 1/2 , −π , √9 − 1</p>
+                <p><input type="radio" id="r4" name="quest7" value="ง">ง.) −7.222... , √3 , π − (1/7)</p>
+            </div>
+
+            <p class="ask">8) กำหนดให้ A = { x | 3x 2 + 5x − 12
+                < 0 } และ B={ x | 1 x−1 − 2 x ≥ 0 } A − B มีสมาชิกที่เป็นจำนวนเต็มกี่ตัว</p>
+                    <div class="quest" id="quest8">
+                        <input type="radio" name="quest8" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest8" value="ก">ก.) 0</p>
+                        <p><input type="radio" id="r2" name="quest8" value="ข">ข.) 1</p>
+                        <p><input type="radio" id="r3" name="quest8" value="ค">ค.) 2</p>
+                        <p><input type="radio" id="r4" name="quest8" value="ง">ง.) 3</p>
+                    </div>
+
+                    <p class="ask">9) ให้ I = เซตของจำนวนเต็ม ถ้า A = { x | x ∈ I และ |x − 2| ≤ 7 } และ B = { x | x ∈ I และ |x + 1| > 2 } แล้ว ข้อใดถูก</p>
+                    <div class="quest" id="quest9">
+                        <input type="radio" name="quest9" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest9" value="ก">ก.) A ∩ B มีสมาชิก 12 ตัว</p>
+                        <p><input type="radio" id="r2" name="quest9" value="ข">ข.) สมาชิกของ A ∩ B ที่เป็นจำนวนคู่และเป็นบวกมี 3 ตัว</p>
+                        <p><input type="radio" id="r3" name="quest9" value="ค">ค.) สมาชิกของ A ∩ B ที่มีค่าน้อยที่สุดคือ −4</p>
+                        <p><input type="radio" id="r4" name="quest9" value="ง">ง.) ผลบวกของสมาชิกทุกตัวของ A ∩ B มีค่าเท่ากับ 35</p>
+                    </div>
+
+                    <p class="ask">10) กล่องรูปสี่เหลี่ยมมุมฉากไม่มีฝาปิดใบหนึ่งมีความจุ 126 ลูกบาศก์ฟุต ถ้าเส้นรอบฐานของกล่องยาว 20 ฟุต และ กล่องสูง 6 ฟุต แล้วพื้นที่ผิวของกล่องเท่ากับกี่ตารางฟุต</p>
+                    <div class="quest" id="quest10">
+                        <input type="radio" name="quest10" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest10" value="ก">ก.) 120</p>
+                        <p><input type="radio" id="r2" name="quest10" value="ข">ข.) 141</p>
+                        <p><input type="radio" id="r3" name="quest10" value="ค">ค.) 146</p>
+                        <p><input type="radio" id="r4" name="quest10" value="ง">ง.) 154</p>
+                    </div>
+
+                    <p class="ask">11) บริษัท เที่ยวทั่วไทย จำกัด ต้องการจัดนำเที่ยวสำหรับกลุ่มนักท่องเที่ยวไม่เกิน 40 คน โดยมีค่าเช่ารถ 10,000 บาท และค่าใช้จ่ายอื่นๆ 250 บาทต่อคน ถ้าบริษัทคิดค่าบริการคนละ 600 บาท แล้ว จะต้องมีนักท่องเที่ยวอย่างน้อย ที่สุดกี่คนบริษัทจึงจะมีกำไรไม่น้อยกว่า
+                        2,000 บาท</p>
+                    <div class="quest" id="quest11">
+                        <input type="radio" name="quest11" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest11" value="ก">ก.) 34</p>
+                        <p><input type="radio" id="r2" name="quest11" value="ข">ข.) 35</p>
+                        <p><input type="radio" id="r3" name="quest11" value="ค">ค.) 36</p>
+                        <p><input type="radio" id="r4" name="quest11" value="ง">ง.) 37</p>
+                    </div>
+
+                    <p class="ask">12) ผลบวกของรากทั้งหมดของสมการ (x−1)/(x+2) + x = 1 เท่ากับข้อใด</p>
+                    <div class="quest" id="quest12">
+                        <input type="radio" name="quest12" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest12" value="ก">ก.) -4</p>
+                        <p><input type="radio" id="r2" name="quest12" value="ข">ข.) -3</p>
+                        <p><input type="radio" id="r3" name="quest12" value="ค">ค.) -2</p>
+                        <p><input type="radio" id="r4" name="quest12" value="ง">ง.) 1</p>
+                    </div>
+
+                    <p class="ask">13) ถ้า A = { x | |x + 1| + 1 > 2 } แล้ว ช่วงในข้อใดเป็นสับเซตของ A</p>
+                    <div class="quest" id="quest13">
+                        <input type="radio" name="quest13" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest13" value="ก">ก.) (−4, −2]</p>
+                        <p><input type="radio" id="r2" name="quest13" value="ข">ข.) (−3, −1)</p>
+                        <p><input type="radio" id="r3" name="quest13" value="ค">ค.) [−1, 0)</p>
+                        <p><input type="radio" id="r4" name="quest13" value="ง">ง.) [2, 3)</p>
+                    </div>
+
+                    <p class="ask">14) กำหนดให้ A = { x | |x − 2|
+                        < 3 } และ B={ x | x^2 − 3x − 4> 0} สมาชิกของ A − B ที่เป็นจำนวนเต็มมีกี่ตัว</p>
+                    <div class="quest" id="quest14">
+                        <input type="radio" name="quest14" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest14" value="ก">ก.) 3</p>
+                        <p><input type="radio" id="r2" name="quest14" value="ข">ข.) 4</p>
+                        <p><input type="radio" id="r3" name="quest14" value="ค">ค.) 5</p>
+                        <p><input type="radio" id="r4" name="quest14" value="ง">ง.) 6</p>
+                    </div>
+
+                    <p class="ask">15) แม่ค้าขายก๋วยเตี๋ยวชามละ 25 บาท โดยมีค่าเช่าร้านวันละ 120 บาท และต้นทุนค่าวัตถุดิบทั้งหมดคิดเป็นชามละ 18 บาท ถ้าต้องการให้ได้กำไรไม่ต่ำกว่าวันละ 500 บาท เขาต้องขายให้ได้อย่างน้อยวันละกี่ชาม</p>
+                    <div class="quest" id="quest15">
+                        <input type="radio" name="quest15" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest15" value="ก">ก.) 88</p>
+                        <p><input type="radio" id="r2" name="quest15" value="ข">ข.) 89</p>
+                        <p><input type="radio" id="r3" name="quest15" value="ค">ค.) 90</p>
+                        <p><input type="radio" id="r4" name="quest15" value="ง">ง.) 91</p>
+                    </div>
+
+                    <p class="ask">16) ห้องประชุมแห่งหนึ่งจัดที่นั่งเป็นแถวโดยนำโต๊ะมาเรียงต่อกันเป็นแถว แถวละ 5 ตัว หลังจากจัดแล้วได้ที่นั่งทั้งหมด 60 ที่นั่ง ถ้าจำนวนแถวน้อยกว่าจำนวนที่นั่งในแต่ละแถวอยู่ 4 ห้องประชุมนี้มีโต๊ะทั้งหมดกี่ตัว</p>
+                    <div class="quest" id="quest16">
+                        <input type="radio" name="quest16" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest16" value="ก">ก.) 30</p>
+                        <p><input type="radio" id="r2" name="quest16" value="ข">ข.) 29</p>
+                        <p><input type="radio" id="r3" name="quest16" value="ค">ค.) 28</p>
+                        <p><input type="radio" id="r4" name="quest16" value="ง">ง.) 31</p>
+                    </div>
+
+                    <p class="ask">17) ถ้ารูปสี่เหลี่ยมผืนผ้ามีด้านยาว ยาวกว่า ด้านกว้างอยู่ 3 ฟุต และเส้นแทยงมุมยาวกว่าด้านกว้างอยู่ 7 ฟุต แล้ว เส้นรอบรูปของรูปสี่เหลี่ยมนี้ยาวกี่ฟุต</p>
+                    <div class="quest" id="quest17">
+                        <input type="radio" name="quest17" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest17" value="ก">ก.) 11 + 4√14</p>
+                        <p><input type="radio" id="r2" name="quest17" value="ข">ข.) 11 + 8 √21</p>
+                        <p><input type="radio" id="r3" name="quest17" value="ค">ค.) 22 + 4√14</p>
+                        <p><input type="radio" id="r4" name="quest17" value="ง">ง.) 22 + 8√14</p>
+                    </div>
+
+                    <p class="ask">18) จำนวนเต็มที่สอดคล้องกับอสมการ |x − 3| ≤ 4 มีกี่จำนวน</p>
+                    <div class="quest" id="quest18">
+                        <input type="radio" name="quest18" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest18" value="ก">ก.) 7</p>
+                        <p><input type="radio" id="r2" name="quest18" value="ข">ข.) 8</p>
+                        <p><input type="radio" id="r3" name="quest18" value="ค">ค.) 9</p>
+                        <p><input type="radio" id="r4" name="quest18" value="ง">ง.) 10</p>
+                    </div>
+
+                    <p class="ask">19) พี่มีเงินมากกว่าน้อง 120 บาท ถ้าทั้งสองคนมีเงินรวมกันไม่เกิน 1,240 บาท แล้ว พี่มีเงินมากที่สุดได้กี่บาท</p>
+                    <div class="quest" id="quest19">
+                        <input type="radio" name="quest19" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest19" value="ก">ก.) 660</p>
+                        <p><input type="radio" id="r2" name="quest19" value="ข">ข.) 670</p>
+                        <p><input type="radio" id="r3" name="quest19" value="ค">ค.) 680</p>
+                        <p><input type="radio" id="r4" name="quest19" value="ง">ง.) 700</p>
+                    </div>
+
+                    <p class="ask">20) ถ้าช่วงเปิด (a , b) เป็นเซตคำตอบของอสมการ |x − 1| + |6 − 3x|
+                        < 17 และ x> 2 แล้ว a + b เท่ากับเท่าใด</p>
+                    <div class="quest" id="quest20">
+                        <input type="radio" name="quest20" value="" checked hidden>
+                        <p><input type="radio" id="r1" name="quest20" value="ก">ก.) 2</p>
+                        <p><input type="radio" id="r2" name="quest20" value="ข">ข.) 4</p>
+                        <p><input type="radio" id="r3" name="quest20" value="ค">ค.) 6</p>
+                        <p><input type="radio" id="r4" name="quest20" value="ง">ง.) 8</p>
+                    </div>
+        </article>
+    </section>
+
+    <center>
+        <br><br>
+        <button class="button btn btn-danger" id="stop1" onclick="stop()">หยุดทำข้อสอบ</button>
+        <br><br>
+
+
+    </center>
+
+    <script>
+        let ansbar = document.getElementById("ansbar");
+        let timer = document.getElementById("timer");
+        let number = 0;
+        let hour = 0;
+        let min = 0;
+        let sec = 0;
+        let ans = ["ง", "ค", "ก", "ข", "ข", "ข", "ค", "ค", "ง", "ข", "ข", "ค", "ง", "ค", "ข", "ก", "ง", "ค", "ค", "ง"];
+        let count = 0;
+
+
+        var x = setInterval(function() {
+            number++;
+            hour = number / 3600;
+            hour = parseInt(hour);
+
+            min = number / 60;
+            min = parseInt(min) % 60;
+
+            sec = number % 60;
+            if (hour < 10) {
+                hour = "0" + hour;
+            }
+            if (sec < 10) {
+                sec = "0" + sec;
+            }
+            if (min < 10) {
+                min = "0" + min;
+            }
+
+            document.getElementById("timer").innerHTML = hour + ":" + min + ":" + sec;
+        }, 1000);
+
+        function stop() {
+            if (count != 0) {
+                document.getElementById("stop1").setAttribute("onclick", "location.href='index.html'");
+            } else {
+                clearInterval(x);
+                count += 1;
+                let text = "";
+                let h = document.createElement("H4");
+                let br = document.createElement("br");
+                let ask1 = document.querySelector('input[name=quest1]:checked').value;
+                let ask2 = document.querySelector('input[name=quest2]:checked').value;
+                let ask3 = document.querySelector('input[name=quest3]:checked').value;
+                let ask4 = document.querySelector('input[name=quest4]:checked').value;
+                let ask5 = document.querySelector('input[name=quest5]:checked').value;
+                let ask6 = document.querySelector('input[name=quest6]:checked').value;
+                let ask7 = document.querySelector('input[name=quest7]:checked').value;
+                let ask8 = document.querySelector('input[name=quest8]:checked').value;
+                let ask9 = document.querySelector('input[name=quest9]:checked').value;
+                let ask10 = document.querySelector('input[name=quest10]:checked').value;
+                let ask11 = document.querySelector('input[name=quest11]:checked').value;
+                let ask12 = document.querySelector('input[name=quest12]:checked').value;
+                let ask13 = document.querySelector('input[name=quest13]:checked').value;
+                let ask14 = document.querySelector('input[name=quest14]:checked').value;
+                let ask15 = document.querySelector('input[name=quest15]:checked').value;
+                let ask16 = document.querySelector('input[name=quest16]:checked').value;
+                let ask17 = document.querySelector('input[name=quest17]:checked').value;
+                let ask18 = document.querySelector('input[name=quest18]:checked').value;
+                let ask19 = document.querySelector('input[name=quest19]:checked').value;
+                let ask20 = document.querySelector('input[name=quest20]:checked').value;
+
+                let ask = [ask1, ask2, ask3, ask4, ask5, ask6, ask7, ask8, ask9, ask10, ask11, ask12, ask13, ask14, ask15, ask16, ask17, ask18, ask19, ask20];
+                let score = 0;
+                for (let i = 0; i < ans.length; i++) {
+                    if (ask[i] == ans[i]) {
+                        score += 1;
+                    } else {
+                        text = "<h5>ข้อ." + (i + 1) + " ตอบ " + ans[i] + "</h5>";
+                        ansbar.innerHTML += text;
+                    }
+
+                }
+
+                if (score != 20) {
+                    text = "<h2 style='color:red'>" + score + "/20</h2>";
+                } else {
+                    text = "<h2 style='color:green'>" + score + "/20</h2>";
+                    ansbar.innerHTML = "<h2 style='color:green'>ถูกทุกข้อ</h2>";
+                }
+
+                ansbar.innerHTML = text + ansbar.innerHTML;
+                document.getElementById("ansbar").style.visibility = "visible";
+                document.getElementById("stop1").style.visibility = "hidden";
+                text = "<a class='btn btn-primary' href='../../onet.html'>เปลื่ยนแบบทดสอบ</a><br></br>";
+                ansbar.innerHTML += text;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
