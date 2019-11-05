@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/icon.ico">
+    <title>MATH</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- front -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body style="background-image: url('../img/wallpaper.png'); background-size: contain;background-attachment: none;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="../index.html">
+            <img src="" width="30" height="30" class="d-inline-block align-top" alt="">LOGO
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">เนื้อหา</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="set.html">เซต (Set)</a>
+                        <a class="dropdown-item" href="RealNm.html">จำนวนจริง (Real number)</a>
+                        <a class="dropdown-item" href="expo.html">เลขยกกำลัง (Exponentiation)</a>
+                        <a class="dropdown-item" href="relation.html">ความสัมพันธ์ และฟังก์ชัน(relations and functions)</a>
+                        <a class="dropdown-item" href="sequence.html">ลำดับและอนุกรม (Sequence & Series)</a>
+                        <a class="dropdown-item" href="probability.html">ความน่าจะเป็น (Probability)</a>
+                        <a class="dropdown-item" href="statistic.html">สถิติเบื้องต้น (ELEMENTARY STATISTICS)</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="background-color:white; width:80%; margin: auto; display: block;">
+        <br><br><br>
+        <center>
+            <h1><b><u>ลำดับและอนุกรม</u></b></h1><br>
+        </center>
+        <div class="mx-5">
+            <h4>
+                ลำดับและอนุกรม หมายถึง จำนวนหรือพจน์ที่เขียนเรียงกันภายใต้กฎเกณฑ์อย่างใดอย่างหนึ่งลำดับทั่ว ๆ ไปแบ่งเป็น 2 ชนิดคือ<br>
+            </h4>
+            <ul>
+                <li>
+                    <h5>ตัวเลขหรือกลุ่มของตัวเลขที่แสดงข้อเท็จจริงเกี่ยวกับเรื่องหนึ่งแรื่องใดเช่นสถิติเกี่ยวกับปริมานน้ำฝน สถิติการเกิดอัคคีภัย เป็นต้น</h5>
+                </li>
+                <li>
+                    <h5>วิชาที่เป็นทั้งวิทยาศาสตร์และศิลป ว่าด้วยกาศึกษาที่เกี่ยวกับข้อมูล ซึ่งประกอบด้วย การเก็บรวบรวมข้อมูล ( collection of date)การนำเสนอข้อมูล( presentation of date)การวิเคราะข้อมูล (analysis of date)การความหมายข้อมูล (interpretation of
+                        data ) </h5>
+                </li>
+                <br>
+            </ul>
+
+            <h4><u>ลำดับ</u><br> บทนิยาม ฟังก์ชันที่มีโดเมนเป็นเซตของจำนวนเต็มบวกที่เรียงจากน้อยไปมากโดยเริ่มตั้งแต่ 1เรียกว่า ลำดับ<br> ถ้าฟังก์ชันเป็นลำดับที่มีโดเมนเป็น { 1, 2, 3, …, n } เรียกว่า ลำดับจำกัด<br> และถ้าฟังก์ชันเป็นลำดับที่มีโดเมนเป็น { 1,
+                2, 3, … } เรียกว่า ลำดับอนันต์<br><br></h4>
+
+            <div style="border: 2px solid black; background-color: rgb(196, 217, 255);">
+                <h4 class="m-3">
+                    <center><u>ความหมายของลำดับในการเขียนลำดับ</u></center>จะเขียนเฉพาะสมาชิกของเรนจ์เรียงกันไป กล่าวคือ ถ้า a เป็น ลำดับจำกัด จะเขียนแทนด้วย a1, a2, a3, …, an และ<br>ถ้า a เป็นลำดับอนันต์ จะเขียนแทนด้วย a1, a2, a3, …, an, …
+                    <br>เรียก a1 ว่า พจน์ที่ 1 ของลำดับ<br> เรียก a2 ว่า พจน์ที่ 2 ของลำดับ<br> เรียก a3 ว่า พจน์ที่ 3 ของลำดับ<br>เรียก an ว่า พจน์ที่ n ของลำดับ หรือพจน์ทั่วไปของลำดับ<br>
+                </h4>
+            </div>
+
+
+            <br>
+            <h4><u>ลำดับเลขคณิต</u></h4>
+            <h5>
+                คือ ลำดับที่มีผลต่างที่ได้จากการนำพจน์ที่ n+1 ลบด้วยพจน์ที่ n แล้วมีค่าคงที่เสมอ และเรียกผลต่างที่มีค่าคงที่ว่า ผลต่างร่วม (Common difference)
+                <br>
+                <div class="mx-3">
+                    ถ้า a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, …, a<sub>n</sub>, a<sub>n+1</sub> , … เป็นลำดับเลขคณิต แล้ว<br> จะได้ a<sub>2</sub> – a<sub>1</sub> = a<sub>3</sub> – a<sub>2</sub> = … = a<sub>n+1</sub> – a<sub>n</sub> เท่ากับ
+                    <b>ค่าคงที่</b><br>เรียกค่าคงที่นี้ว่า “
+                    <b>ผลต่างร่วม</b>” (Common difference) เขียนแทนด้วย “d”<br> จากบทนิยาม d = a<sub>n+1</sub> – a<sub>n</sub><br>
+                </div>
+            </h5>
+            <h4><u>ลำดับเรขาคณิต</u></h4>
+            <h5>
+                คือ ลำดับที่มีอัตราส่วนของพจน์ที่ n+1 ต่อพจน์ที่ n เป็นค่าคงที่ ทุกค่าของจำนวนนับ n และเรียกค่าคงที่นี้ว่า “อัตราส่วนร่วม” ถ้า a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, …, a<sub>n</sub>, a<sub>n+1</sub><br>เป็นลำดับเรขาคณิตแล้ว จะได้เท่ากับค่าคงที่
+                เรียกค่าคงที่นี้ว่า “อัตราส่วนร่วม” (Common ratio) เขียนแทนด้วย r
+                <br>
+            </h5>
+            <h4><u>อนุกรม</u></h4>
+            <h5>
+                ถ้า a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, …, a<sub>n</sub> เป็น ลำดับจำกัด ที่มี n พจน์ จะเรียกการเขียนแสดงผลบวกของพจน์ทุกพจน์ของลำดับในรูป<br> a
+                <sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + … + a<sub>n</sub> ว่า <b>อนุกรมจำกัด</b><br> ในทำนองเดียวกัน ถ้า a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, …, a<sub>n</sub>,… เป็น ลำดับอนันต์ จะเรียกการเขียนแสดงผลบวกในรูป<br> a
+                <sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + … + a<sub>n</sub> +… ว่า <b>อนุกรมอนันต์</b><br>
+            </h5>
+            <h4><u>อนุกรมเลขคณิต</u></h4>
+            <h5>
+                อนุกรมที่ได้จากลำดับเลขคณิต เรียกว่า <b>อนุกรมเลขคณิต</b> และผลต่างร่วมของลำดับเลขคณิต เป็นผลต่างร่วมของอนุกรมเลขคณิตด้วย
+                <br>
+            </h5>
+            <h4><u>อนุกรมเรขาคณิต</u></h4>
+            <h5>
+                อนุกรมที่ได้จากลำดับเรขาคณิต เรียกว่า <b>อนุกรมเรขาคณิต</b> และ อัตราส่วนร่วมของลำดับเรขาคณิตจะเป็นอัตราส่วนร่วมของอนุกรมเรขาคณิตด้วย
+                <br>
+            </h5>
+            <center><a href="test/onet/RealNm.html" class="btn btn-outline-danger">ทำแบบทดสอบ</a></center>
+            <br><br>
+
+        </div>
+    </div>
+
+
+    <div class="footer py-5" style="background: #a2cfff; text-align: center;">
+        <div class="footer-nav">
+            <a href="../index.html"><span>หน้าแรก</span></a>
+            <span> | </span>
+            <a href="../reference.html"><span>เนื้อหาอ้างอิง</span></a>
+            <span> | </span>
+            <a href="../contact.html"><span>ผู้จัดทำ</span></a>
+        </div><br>
+        <div class="footer-social">
+            <a href=""><i class="fa fa-facebook" style="font-size: 1.75em;margin-right: .3em;"></i></a>
+            <a href=""><i class="fa fa-twitter-square" style="font-size: 1.75em;margin-right: .3em;"></i></a>
+            <a href=""><i class="fa fa-instagram" style="font-size: 1.75em;"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
