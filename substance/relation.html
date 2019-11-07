@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/logo/cube.png">
+    <title>ความสัมพันธ์และฟังก์ชัน</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- front -->
+    <link href="https://fonts.googleapis.com/css?family=Kanit&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+        }
+    </style>
+
+</head>
+
+<body style="background-image: url('../img/wallpaper.png'); background-size: contain;background-attachment: none;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/logo/cube.png" width="40" height="40" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mr-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">เนื้อหา</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="set.html">เซต (Set)</a>
+                        <a class="dropdown-item" href="RealNm.html">จำนวนจริง (Real number)</a>
+                        <a class="dropdown-item" href="expo.html">เลขยกกำลัง (Exponentiation)</a>
+                        <a class="dropdown-item" href="relation.html">ความสัมพันธ์ และฟังก์ชัน(relations and functions)</a>
+                        <a class="dropdown-item" href="sequence.html">ลำดับและอนุกรม (Sequence & Series)</a>
+                        <a class="dropdown-item" href="probability.html">ความน่าจะเป็น (Probability)</a>
+                        <a class="dropdown-item" href="statistic.html">สถิติเบื้องต้น (ELEMENTARY STATISTICS)</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="background-color:white; width:80%; margin: auto; display: block;">
+        <br><br><br>
+        <center>
+            <h1><b><u>ความสัมพันธ์และฟังก์ชัน</u></b></h1><br>
+        </center>
+        <div class="mx-5">
+            <h4>ความสัมพันธ์ คือ การนำสองสิ่งมาเขียนเป็นคู่อย่างมีลำดับ เช่น (3, 2), (-1, 0), (สมชาย, 5) เป็นต้น การสลับตำแหน่งของคำในคู่อันดับ จะทำให้กลายเป็นคนละอัน กล่าวคือ (3, 2) ≠ (2, 3) กล่าวคือ คู่อันดับ 2 คู่ จะเท่ากันได้ ก็เมื่อ สมาชิกตัวหน้าเท่ากัน
+                และ สมาชิกตัวหลังเท่ากัน ตัวอย่าง จงหาค่า x และ y ที่ทำให้ (3, x + y) = (y + 1, 5y)<br>วิธีทำ คู่อันดับจะเท่ากันได้ เมื่อสมาชิกตัวหน้าเท่ากัน และสมาชิกตัวหลังเท่ากัน<br>
+
+                <center><img src="../img/substance/3, x+y.png"></center>ดังนั้น คำตอบ คือ x = 8 และ y = 2
+            </h4>
+
+
+            <h4><u>ผลคูณคาร์ทีเชียน</u></h4>
+            <h5>
+                ความสัมพันธ์ คือ ความเกี่ยวข้องกัน นะหว่างกลุ่มสองกลุ่ม เช่น <br>
+                <img src="../img/substance/สมชาย.png"><br>ความสัมพันธ์ “แอบชอบ” ระหว่าง กลุ่มผู้ชาย ซึ่งประกอบด้วย สมชาย สมหวัง สมปอง และ สมบัติ<br> ไปยัง กลุ่มผู้หญิง ซึ่งประกอบด้วย สมหญิง สมศรี และสมหมาย<br> โดย สมชาย แอบชอบ สมหญิง<br> สมหวัง แอบชอบ
+                สมหญิง
+                <br> และ สมบัติ แอบชอบ สมศรีและสมหญิง<br> สิ่งที่ต้องระวังคือ ความสัมพันธ์ส่วนใหญ่ “<a style="color: red;">สลับที่ไม่ได้</a>” <br> <br>และในบางกรณี กลุ่มหน้า กับกลุ่มหลัง อาจเป็นกลุ่มเดียวกันได้ด้วย<br>
+                <img src="../img/substance/สมชาย2.png"><br>เช่น ในการแข่งขันชกมวยแบบแบทเทิลรอยัล ในกลุ่มผู้ชาย<br> พบว่า สมชาย ชกโดน สมหวังและสมบัติ<br> และ สมบัติ ชกโดนสมปอง<br> จะสามารถเขียนแผนภาพได้กลุ่มหน้ากับกลุ่มหลังเป็นกลุ่มเดียวกัน ดังรูป<br>                ในกรณีที่ กลุ่มหน้ากับกลุ่มหลังเป็นกลุ่มเดียวกัน เราจะเรียกว่า ความสมพันธ์ “ในกลุ่ม”<br>
+
+
+
+            </h5>
+            <br>
+            <center><a href="test/onet/RealNm.html" class="btn btn-outline-danger">ทำแบบทดสอบ</a></center>
+            <br><br>
+
+        </div>
+    </div>
+
+
+    <div class="footer py-5" style="background: #a2cfff; text-align: center;">
+        <div class="footer-nav">
+            <a href="../index.html"><span>หน้าแรก</span></a>
+            <span> | </span>
+            <a href="../reference.html"><span>เนื้อหาอ้างอิง</span></a>
+            <span> | </span>
+            <a href="../contact.html"><span>ผู้จัดทำ</span></a>
+        </div><br>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/Hexagon-105519690900857/" target="_blank"><i class="fa fa-facebook" style="font-size: 1.75em;margin-right: .3em;"></i></a>
+            <a href="https://twitter.com/Hexagon67029020" target="_blank"><i class="fa fa-twitter-square" style="font-size: 1.75em;margin-right: .3em;"></i></a>
+            <a href="https://www.instagram.com/hexagon_XD/" target="_blank"><i class="fa fa-instagram" style="font-size: 1.75em;"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
