@@ -1,2 +1,2 @@
-# WEB-TECHNOLOGY-PROJECT
+# HEXAGON
 https://erongi.github.io/WEB-TECHNOLOGY-PROJECT/
